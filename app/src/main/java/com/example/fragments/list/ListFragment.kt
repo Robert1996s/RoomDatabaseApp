@@ -9,7 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.Data.UserViewModel
+import com.example.viewmodel.UserViewModel
 import com.example.myroomdatabaseexample.R
 import com.example.myroomdatabaseexample.databinding.FragmentListBinding
 

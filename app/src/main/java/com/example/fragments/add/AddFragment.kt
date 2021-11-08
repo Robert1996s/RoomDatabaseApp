@@ -10,8 +10,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.Data.User
-import com.example.Data.UserViewModel
+import com.example.Model.User
+import com.example.viewmodel.UserViewModel
 import com.example.myroomdatabaseexample.R
 import com.example.myroomdatabaseexample.databinding.FragmentAddBinding
 import com.example.myroomdatabaseexample.databinding.FragmentListBinding
@@ -39,13 +39,13 @@ class AddFragment : Fragment() {
 
 
         binding.buttonAdd.setOnClickListener {
-            insertDataaToDatabase()
+            insertDataToDatabase()
         }
 
         return view
     }
 
-    private fun insertDataaToDatabase() {
+    private fun insertDataToDatabase() {
         val firstName = binding.firstNameEt.text.toString()
         val lastName = binding.lastNameEt.text.toString()
         val age = binding.ageEt.text
